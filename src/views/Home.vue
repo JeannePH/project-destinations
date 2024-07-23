@@ -6,15 +6,15 @@ const destinations = ref(sourceData.destinations)
 </script>
 
 <template>
-  <div>
+  <div class="home">
     <h1>Toutes les destinations</h1>
   </div>
 
-  <div class="container">
+  <div class="destinations">
     <router-link
         v-for="destination in destinations"
         :key="destination.id"
-        :to="destination.slug"
+        :to="{name: 'destination.show', params: {id: destination.id}}"
     >
       <h2>{{ destination.name }}</h2>
       <img :src="`/images/${destination.image}`" :alt="destination.name"/>
@@ -33,6 +33,4 @@ const destinations = ref(sourceData.destinations)
 </template>
 
 <style scoped>
-
-
 </style>

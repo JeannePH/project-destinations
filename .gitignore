@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+src/views/TestView.vue
+src/views/Documentation.vue
+src/components/TestProps.vue
+src/components/HelloWorld.vue
+public/vite.svg
+src/assets/vue.svg
